@@ -1,0 +1,2394 @@
+﻿<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="5/9/2024 8:14:59 PM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="DESKTOP-8L5TLOD"
+  DTS:CreatorName="DESKTOP-8L5TLOD\fabri"
+  DTS:DTSID="{54CFB00D-0235-4046-9743-9D425181DE42}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="16.0.5556.0"
+  DTS:LocaleID="12298"
+  DTS:ObjectName="Package"
+  DTS:PackageType="5"
+  DTS:VersionBuild="6"
+  DTS:VersionGUID="{13374F2E-807D-4038-BC07-93A6920B83ED}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Administrador de conexiones de archivos planos]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{46C1945C-D68E-40B1-B5CB-7A7508178A32}"
+      DTS:ObjectName="Administrador de conexiones de archivos planos">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="12298"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="C:\Users\fabri\OneDrive - Universidad de Las Américas\Universidad\INTEGRACION DE SISTEMAS\reporte_contable_actualizado.csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="FechaReporte"
+              DTS:DTSID="{CBBFD5D9-A202-425E-AFC2-5D83F2712392}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="IDTransaccion"
+              DTS:DTSID="{906D7ECB-E79F-4E8E-AE11-2978AB51134F}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CodigoCuenta"
+              DTS:DTSID="{3BBF54E5-8BF0-4780-BA98-E2CA57526662}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Descripcion"
+              DTS:DTSID="{92F46C79-B6DF-47FC-A983-2E3C692D6AFF}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Monto"
+              DTS:DTSID="{A7BEFA43-7A01-4D1F-B139-CED9144EBDB2}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="TipoTransaccion"
+              DTS:DTSID="{B2320C68-5796-4FE5-9D22-E9CCF0A8CE40}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Administrador de conexiones de archivos planos 1]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{0D59C23D-72EC-43BF-9FC7-06ECD787BC43}"
+      DTS:ObjectName="Administrador de conexiones de archivos planos 1">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="12298"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="C:\Users\fabri\OneDrive - Universidad de Las Américas\Universidad\INTEGRACION DE SISTEMAS\reporte_contable_actualizado.csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="FechaReporte"
+              DTS:DTSID="{2F573E4F-E01C-4E41-8290-8E03AFE2E830}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="IDTransaccion"
+              DTS:DTSID="{63571302-EAFA-4E07-93B3-804B121C6989}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CodigoCuenta"
+              DTS:DTSID="{2E3E37B1-266F-4486-91C4-15C8025F8BE0}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Descripcion"
+              DTS:DTSID="{5142CC98-8C02-4303-81C8-93AABB363B4E}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Monto"
+              DTS:DTSID="{096E2FDE-6602-4820-8336-55E1F462A3D1}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="TipoTransaccion"
+              DTS:DTSID="{9BDCEBB1-8FE8-4099-BFAA-AB3622DC0AF5}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[DESKTOP-8L5TLOD.ContactCenter]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{1ED3AF90-FC0E-42F2-9CD4-78ADABFC73A6}"
+      DTS:ObjectName="DESKTOP-8L5TLOD.ContactCenter">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=DESKTOP-8L5TLOD;Initial Catalog=ContactCenter;Provider=SQLNCLI11.1;Integrated Security=SSPI;Application Name=SSIS-Package-{1ED3AF90-FC0E-42F2-9CD4-78ADABFC73A6}DESKTOP-8L5TLOD.ContactCenter;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[DESKTOP-8L5TLOD.GestionClientes]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{D6BDBC7C-3A76-4222-9708-229DEA7A1998}"
+      DTS:ObjectName="DESKTOP-8L5TLOD.GestionClientes">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=DESKTOP-8L5TLOD;Initial Catalog=GestionClientes;Provider=SQLNCLI11.1;Integrated Security=SSPI;Application Name=SSIS-Package-{D6BDBC7C-3A76-4222-9708-229DEA7A1998}DESKTOP-8L5TLOD.GestionClientes;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[DESKTOP-8L5TLOD.SistemaContable]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{585E2753-605A-4714-B3B8-14DD3E2B6A5C}"
+      DTS:ObjectName="DESKTOP-8L5TLOD.SistemaContable">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=DESKTOP-8L5TLOD;Initial Catalog=SistemaContable;Provider=SQLNCLI11.1;Integrated Security=SSPI;Application Name=SSIS-Package-{585E2753-605A-4714-B3B8-14DD3E2B6A5C}DESKTOP-8L5TLOD.SistemaContable;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:Variables />
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\CargarDatosContables"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Data Flow Task"
+      DTS:DTSID="{D741F6D8-9DEC-43E6-AC48-2F75F5F5B09B}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="CargarDatosContables"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\CargarDatosContables\Flat File Source"
+              componentClassID="Microsoft.FlatFileSource"
+              contactInfo="Flat File Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Flat File Source"
+              localeId="12298"
+              name="Flat File Source"
+              usesDispositions="true"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Specifies whether zero-length columns are treated as null."
+                  name="RetainNulls">true</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of an output column containing the file name. If no name is specified, no output column containing the file name will be generated."
+                  name="FileNameColumnName"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\CargarDatosContables\Flat File Source.Connections[FlatFileConnection]"
+                  connectionManagerID="Package.ConnectionManagers[Administrador de conexiones de archivos planos]"
+                  connectionManagerRefId="Package.ConnectionManagers[Administrador de conexiones de archivos planos]"
+                  name="FlatFileConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\CargarDatosContables\Flat File Source.Outputs[Flat File Source Output]"
+                  name="Flat File Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\CargarDatosContables\Flat File Source.Outputs[Flat File Source Output].Columns[FechaReporte]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\CargarDatosContables\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[FechaReporte]"
+                      length="50"
+                      lineageId="Package\CargarDatosContables\Flat File Source.Outputs[Flat File Source Output].Columns[FechaReporte]"
+                      name="FechaReporte"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\CargarDatosContables\Flat File Source.Outputs[Flat File Source Output].Columns[IDTransaccion]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\CargarDatosContables\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[IDTransaccion]"
+                      length="50"
+                      lineageId="Package\CargarDatosContables\Flat File Source.Outputs[Flat File Source Output].Columns[IDTransaccion]"
+                      name="IDTransaccion"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\CargarDatosContables\Flat File Source.Outputs[Flat File Source Output].Columns[CodigoCuenta]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\CargarDatosContables\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[CodigoCuenta]"
+                      length="50"
+                      lineageId="Package\CargarDatosContables\Flat File Source.Outputs[Flat File Source Output].Columns[CodigoCuenta]"
+                      name="CodigoCuenta"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\CargarDatosContables\Flat File Source.Outputs[Flat File Source Output].Columns[Descripcion]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\CargarDatosContables\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Descripcion]"
+                      length="50"
+                      lineageId="Package\CargarDatosContables\Flat File Source.Outputs[Flat File Source Output].Columns[Descripcion]"
+                      name="Descripcion"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\CargarDatosContables\Flat File Source.Outputs[Flat File Source Output].Columns[Monto]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\CargarDatosContables\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Monto]"
+                      length="50"
+                      lineageId="Package\CargarDatosContables\Flat File Source.Outputs[Flat File Source Output].Columns[Monto]"
+                      name="Monto"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\CargarDatosContables\Flat File Source.Outputs[Flat File Source Output].Columns[TipoTransaccion]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\CargarDatosContables\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[TipoTransaccion]"
+                      length="50"
+                      lineageId="Package\CargarDatosContables\Flat File Source.Outputs[Flat File Source Output].Columns[TipoTransaccion]"
+                      name="TipoTransaccion"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\CargarDatosContables\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[FechaReporte]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="FechaReporte" />
+                    <externalMetadataColumn
+                      refId="Package\CargarDatosContables\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[IDTransaccion]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="IDTransaccion" />
+                    <externalMetadataColumn
+                      refId="Package\CargarDatosContables\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[CodigoCuenta]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="CodigoCuenta" />
+                    <externalMetadataColumn
+                      refId="Package\CargarDatosContables\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Descripcion]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Descripcion" />
+                    <externalMetadataColumn
+                      refId="Package\CargarDatosContables\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Monto]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Monto" />
+                    <externalMetadataColumn
+                      refId="Package\CargarDatosContables\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[TipoTransaccion]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="TipoTransaccion" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\CargarDatosContables\Flat File Source.Outputs[Flat File Source Error Output]"
+                  isErrorOut="true"
+                  name="Flat File Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\CargarDatosContables\Flat File Source.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      codePage="1252"
+                      dataType="text"
+                      description="Flat File Source Error Output Column"
+                      lineageId="Package\CargarDatosContables\Flat File Source.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      name="Flat File Source Error Output Column" />
+                    <outputColumn
+                      refId="Package\CargarDatosContables\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\CargarDatosContables\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\CargarDatosContables\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\CargarDatosContables\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\CargarDatosContables\OLE DB Destination"
+              componentClassID="Microsoft.OLEDBDestination"
+              contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+              description="OLE DB Destination"
+              name="OLE DB Destination"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[dbo].[ReportesContables]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">0</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                  name="FastLoadOptions"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                  name="FastLoadMaxInsertCommitSize">2147483647</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\CargarDatosContables\OLE DB Destination.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[DESKTOP-8L5TLOD.SistemaContable]"
+                  connectionManagerRefId="Package.ConnectionManagers[DESKTOP-8L5TLOD.SistemaContable]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\CargarDatosContables\OLE DB Destination.Inputs[OLE DB Destination Input]"
+                  errorOrTruncationOperation="Insert"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="OLE DB Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\CargarDatosContables\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[FechaReporte]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="FechaReporte"
+                      externalMetadataColumnId="Package\CargarDatosContables\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[FechaReporte]"
+                      lineageId="Package\CargarDatosContables\Flat File Source.Outputs[Flat File Source Output].Columns[FechaReporte]" />
+                    <inputColumn
+                      refId="Package\CargarDatosContables\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[IDTransaccion]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="IDTransaccion"
+                      externalMetadataColumnId="Package\CargarDatosContables\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[IDTransaccion]"
+                      lineageId="Package\CargarDatosContables\Flat File Source.Outputs[Flat File Source Output].Columns[IDTransaccion]" />
+                    <inputColumn
+                      refId="Package\CargarDatosContables\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[CodigoCuenta]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="CodigoCuenta"
+                      externalMetadataColumnId="Package\CargarDatosContables\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CodigoCuenta]"
+                      lineageId="Package\CargarDatosContables\Flat File Source.Outputs[Flat File Source Output].Columns[CodigoCuenta]" />
+                    <inputColumn
+                      refId="Package\CargarDatosContables\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Descripcion]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Descripcion"
+                      externalMetadataColumnId="Package\CargarDatosContables\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Descripcion]"
+                      lineageId="Package\CargarDatosContables\Flat File Source.Outputs[Flat File Source Output].Columns[Descripcion]" />
+                    <inputColumn
+                      refId="Package\CargarDatosContables\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Monto]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Monto"
+                      externalMetadataColumnId="Package\CargarDatosContables\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Monto]"
+                      lineageId="Package\CargarDatosContables\Flat File Source.Outputs[Flat File Source Output].Columns[Monto]" />
+                    <inputColumn
+                      refId="Package\CargarDatosContables\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[TipoTransaccion]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="TipoTransaccion"
+                      externalMetadataColumnId="Package\CargarDatosContables\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[TipoTransaccion]"
+                      lineageId="Package\CargarDatosContables\Flat File Source.Outputs[Flat File Source Output].Columns[TipoTransaccion]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\CargarDatosContables\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[FechaReporte]"
+                      dataType="dbDate"
+                      name="FechaReporte" />
+                    <externalMetadataColumn
+                      refId="Package\CargarDatosContables\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[IDTransaccion]"
+                      dataType="i4"
+                      name="IDTransaccion" />
+                    <externalMetadataColumn
+                      refId="Package\CargarDatosContables\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CodigoCuenta]"
+                      dataType="i4"
+                      name="CodigoCuenta" />
+                    <externalMetadataColumn
+                      refId="Package\CargarDatosContables\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Descripcion]"
+                      codePage="1252"
+                      dataType="str"
+                      length="255"
+                      name="Descripcion" />
+                    <externalMetadataColumn
+                      refId="Package\CargarDatosContables\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Monto]"
+                      dataType="numeric"
+                      name="Monto"
+                      precision="10"
+                      scale="2" />
+                    <externalMetadataColumn
+                      refId="Package\CargarDatosContables\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[TipoTransaccion]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="TipoTransaccion" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\CargarDatosContables\OLE DB Destination.Outputs[OLE DB Destination Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="OLE DB Destination Error Output"
+                  synchronousInputId="Package\CargarDatosContables\OLE DB Destination.Inputs[OLE DB Destination Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\CargarDatosContables\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\CargarDatosContables\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\CargarDatosContables\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\CargarDatosContables\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\CargarDatosContables.Paths[Flat File Source Output]"
+              endId="Package\CargarDatosContables\OLE DB Destination.Inputs[OLE DB Destination Input]"
+              name="Flat File Source Output"
+              startId="Package\CargarDatosContables\Flat File Source.Outputs[Flat File Source Output]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\SincronizacionSCyCC"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Data Flow Task"
+      DTS:DTSID="{7F460BC9-A37C-4327-9C2E-8078D16614DE}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="SincronizacionSCyCC"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\SincronizacionSCyCC\Insertar destino"
+              componentClassID="Microsoft.OLEDBDestination"
+              contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+              description="OLE DB Destination"
+              name="Insertar destino"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[dbo].[ContactCenterInteracciones]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">0</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                  name="FastLoadOptions"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                  name="FastLoadMaxInsertCommitSize">2147483647</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\SincronizacionSCyCC\Insertar destino.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[DESKTOP-8L5TLOD.ContactCenter]"
+                  connectionManagerRefId="Package.ConnectionManagers[DESKTOP-8L5TLOD.ContactCenter]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\SincronizacionSCyCC\Insertar destino.Inputs[OLE DB Destination Input]"
+                  errorOrTruncationOperation="Insert"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="OLE DB Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\SincronizacionSCyCC\Insertar destino.Inputs[OLE DB Destination Input].Columns[IDCliente]"
+                      cachedDataType="i4"
+                      cachedName="IDCliente"
+                      cachedSortKeyPosition="1"
+                      externalMetadataColumnId="Package\SincronizacionSCyCC\Insertar destino.Inputs[OLE DB Destination Input].ExternalColumns[IDCliente]"
+                      lineageId="Package\SincronizacionSCyCC\Sort.Outputs[Sort Output].Columns[IDCliente]" />
+                    <inputColumn
+                      refId="Package\SincronizacionSCyCC\Insertar destino.Inputs[OLE DB Destination Input].Columns[Telefono]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="20"
+                      cachedName="Telefono"
+                      cachedSortKeyPosition="5"
+                      externalMetadataColumnId="Package\SincronizacionSCyCC\Insertar destino.Inputs[OLE DB Destination Input].ExternalColumns[Telefono]"
+                      lineageId="Package\SincronizacionSCyCC\Sort.Outputs[Sort Output].Columns[Telefono]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\SincronizacionSCyCC\Insertar destino.Inputs[OLE DB Destination Input].ExternalColumns[IDCliente]"
+                      dataType="i4"
+                      name="IDCliente" />
+                    <externalMetadataColumn
+                      refId="Package\SincronizacionSCyCC\Insertar destino.Inputs[OLE DB Destination Input].ExternalColumns[Telefono]"
+                      codePage="1252"
+                      dataType="str"
+                      length="20"
+                      name="Telefono" />
+                    <externalMetadataColumn
+                      refId="Package\SincronizacionSCyCC\Insertar destino.Inputs[OLE DB Destination Input].ExternalColumns[IDInteraccion]"
+                      dataType="i4"
+                      name="IDInteraccion" />
+                    <externalMetadataColumn
+                      refId="Package\SincronizacionSCyCC\Insertar destino.Inputs[OLE DB Destination Input].ExternalColumns[FechaInteraccion]"
+                      dataType="dbDate"
+                      name="FechaInteraccion" />
+                    <externalMetadataColumn
+                      refId="Package\SincronizacionSCyCC\Insertar destino.Inputs[OLE DB Destination Input].ExternalColumns[TipoInteraccion]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="TipoInteraccion" />
+                    <externalMetadataColumn
+                      refId="Package\SincronizacionSCyCC\Insertar destino.Inputs[OLE DB Destination Input].ExternalColumns[DetalleInteraccion]"
+                      codePage="1252"
+                      dataType="str"
+                      length="255"
+                      name="DetalleInteraccion" />
+                    <externalMetadataColumn
+                      refId="Package\SincronizacionSCyCC\Insertar destino.Inputs[OLE DB Destination Input].ExternalColumns[Resultado]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Resultado" />
+                    <externalMetadataColumn
+                      refId="Package\SincronizacionSCyCC\Insertar destino.Inputs[OLE DB Destination Input].ExternalColumns[Agente]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="Agente" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\SincronizacionSCyCC\Insertar destino.Outputs[OLE DB Destination Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="OLE DB Destination Error Output"
+                  synchronousInputId="Package\SincronizacionSCyCC\Insertar destino.Inputs[OLE DB Destination Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\SincronizacionSCyCC\Insertar destino.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\SincronizacionSCyCC\Insertar destino.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\SincronizacionSCyCC\Insertar destino.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\SincronizacionSCyCC\Insertar destino.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\SincronizacionSCyCC\OLE DB Command"
+              componentClassID="Microsoft.OLEDBCommand"
+              contactInfo="OLE DB Command;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;2"
+              description="Runs an SQL statement for each row in a data flow. For example, call a 'new employee setup' stored procedure for each row in the 'new employees' table. Note: running an SQL statement for each row of a large data flow may take a long time."
+              name="OLE DB Command"
+              usesDispositions="true"
+              version="2">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  expressionType="Notify"
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">UPDATE [dbo].[SistemaGestionClientes] SET [Apellido] = ?,[Direccion] = ?,[Email] = ?,[EstadoCliente] = ?,[FechaRegistro] = ?,[Nombre] = ?,[SaldoDeuda] = ?,[Telefono] = ? WHERE [IDCliente] = ?</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\SincronizacionSCyCC\OLE DB Command.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[DESKTOP-8L5TLOD.GestionClientes]"
+                  connectionManagerRefId="Package.ConnectionManagers[DESKTOP-8L5TLOD.GestionClientes]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\SincronizacionSCyCC\OLE DB Command.Inputs[OLE DB Command Input]"
+                  errorOrTruncationOperation="Command Execution"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="OLE DB Command Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\SincronizacionSCyCC\OLE DB Command.Inputs[OLE DB Command Input].Columns[Apellido]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="100"
+                      cachedName="Apellido"
+                      cachedSortKeyPosition="3"
+                      externalMetadataColumnId="Package\SincronizacionSCyCC\OLE DB Command.Inputs[OLE DB Command Input].ExternalColumns[Param_0]"
+                      lineageId="Package\SincronizacionSCyCC\Sort.Outputs[Sort Output].Columns[Apellido]" />
+                    <inputColumn
+                      refId="Package\SincronizacionSCyCC\OLE DB Command.Inputs[OLE DB Command Input].Columns[Direccion]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="255"
+                      cachedName="Direccion"
+                      cachedSortKeyPosition="6"
+                      externalMetadataColumnId="Package\SincronizacionSCyCC\OLE DB Command.Inputs[OLE DB Command Input].ExternalColumns[Param_1]"
+                      lineageId="Package\SincronizacionSCyCC\Sort.Outputs[Sort Output].Columns[Direccion]" />
+                    <inputColumn
+                      refId="Package\SincronizacionSCyCC\OLE DB Command.Inputs[OLE DB Command Input].Columns[Email]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="100"
+                      cachedName="Email"
+                      cachedSortKeyPosition="4"
+                      externalMetadataColumnId="Package\SincronizacionSCyCC\OLE DB Command.Inputs[OLE DB Command Input].ExternalColumns[Param_2]"
+                      lineageId="Package\SincronizacionSCyCC\Sort.Outputs[Sort Output].Columns[Email]" />
+                    <inputColumn
+                      refId="Package\SincronizacionSCyCC\OLE DB Command.Inputs[OLE DB Command Input].Columns[EstadoCliente]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="EstadoCliente"
+                      cachedSortKeyPosition="8"
+                      externalMetadataColumnId="Package\SincronizacionSCyCC\OLE DB Command.Inputs[OLE DB Command Input].ExternalColumns[Param_3]"
+                      lineageId="Package\SincronizacionSCyCC\Sort.Outputs[Sort Output].Columns[EstadoCliente]" />
+                    <inputColumn
+                      refId="Package\SincronizacionSCyCC\OLE DB Command.Inputs[OLE DB Command Input].Columns[FechaRegistro]"
+                      cachedDataType="dbDate"
+                      cachedName="FechaRegistro"
+                      cachedSortKeyPosition="7"
+                      externalMetadataColumnId="Package\SincronizacionSCyCC\OLE DB Command.Inputs[OLE DB Command Input].ExternalColumns[Param_4]"
+                      lineageId="Package\SincronizacionSCyCC\Sort.Outputs[Sort Output].Columns[FechaRegistro]" />
+                    <inputColumn
+                      refId="Package\SincronizacionSCyCC\OLE DB Command.Inputs[OLE DB Command Input].Columns[IDCliente]"
+                      cachedDataType="i4"
+                      cachedName="IDCliente"
+                      cachedSortKeyPosition="1"
+                      externalMetadataColumnId="Package\SincronizacionSCyCC\OLE DB Command.Inputs[OLE DB Command Input].ExternalColumns[Param_8]"
+                      lineageId="Package\SincronizacionSCyCC\Sort.Outputs[Sort Output].Columns[IDCliente]" />
+                    <inputColumn
+                      refId="Package\SincronizacionSCyCC\OLE DB Command.Inputs[OLE DB Command Input].Columns[Nombre]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="100"
+                      cachedName="Nombre"
+                      cachedSortKeyPosition="2"
+                      externalMetadataColumnId="Package\SincronizacionSCyCC\OLE DB Command.Inputs[OLE DB Command Input].ExternalColumns[Param_5]"
+                      lineageId="Package\SincronizacionSCyCC\Sort.Outputs[Sort Output].Columns[Nombre]" />
+                    <inputColumn
+                      refId="Package\SincronizacionSCyCC\OLE DB Command.Inputs[OLE DB Command Input].Columns[SaldoDeuda]"
+                      cachedDataType="numeric"
+                      cachedName="SaldoDeuda"
+                      cachedPrecision="10"
+                      cachedScale="2"
+                      cachedSortKeyPosition="9"
+                      externalMetadataColumnId="Package\SincronizacionSCyCC\OLE DB Command.Inputs[OLE DB Command Input].ExternalColumns[Param_6]"
+                      lineageId="Package\SincronizacionSCyCC\Sort.Outputs[Sort Output].Columns[SaldoDeuda]" />
+                    <inputColumn
+                      refId="Package\SincronizacionSCyCC\OLE DB Command.Inputs[OLE DB Command Input].Columns[Telefono]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="20"
+                      cachedName="Telefono"
+                      cachedSortKeyPosition="5"
+                      externalMetadataColumnId="Package\SincronizacionSCyCC\OLE DB Command.Inputs[OLE DB Command Input].ExternalColumns[Param_7]"
+                      lineageId="Package\SincronizacionSCyCC\Sort.Outputs[Sort Output].Columns[Telefono]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\SincronizacionSCyCC\OLE DB Command.Inputs[OLE DB Command Input].ExternalColumns[Param_0]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="Param_0">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Parameter information.  Matches OLE DB's DBPARAMFLAGSENUM values."
+                          name="DBParamInfoFlags">65</property>
+                      </properties>
+                    </externalMetadataColumn>
+                    <externalMetadataColumn
+                      refId="Package\SincronizacionSCyCC\OLE DB Command.Inputs[OLE DB Command Input].ExternalColumns[Param_1]"
+                      codePage="1252"
+                      dataType="str"
+                      length="255"
+                      name="Param_1">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Parameter information.  Matches OLE DB's DBPARAMFLAGSENUM values."
+                          name="DBParamInfoFlags">65</property>
+                      </properties>
+                    </externalMetadataColumn>
+                    <externalMetadataColumn
+                      refId="Package\SincronizacionSCyCC\OLE DB Command.Inputs[OLE DB Command Input].ExternalColumns[Param_2]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="Param_2">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Parameter information.  Matches OLE DB's DBPARAMFLAGSENUM values."
+                          name="DBParamInfoFlags">65</property>
+                      </properties>
+                    </externalMetadataColumn>
+                    <externalMetadataColumn
+                      refId="Package\SincronizacionSCyCC\OLE DB Command.Inputs[OLE DB Command Input].ExternalColumns[Param_3]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Param_3">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Parameter information.  Matches OLE DB's DBPARAMFLAGSENUM values."
+                          name="DBParamInfoFlags">65</property>
+                      </properties>
+                    </externalMetadataColumn>
+                    <externalMetadataColumn
+                      refId="Package\SincronizacionSCyCC\OLE DB Command.Inputs[OLE DB Command Input].ExternalColumns[Param_4]"
+                      dataType="dbDate"
+                      name="Param_4">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Parameter information.  Matches OLE DB's DBPARAMFLAGSENUM values."
+                          name="DBParamInfoFlags">65</property>
+                      </properties>
+                    </externalMetadataColumn>
+                    <externalMetadataColumn
+                      refId="Package\SincronizacionSCyCC\OLE DB Command.Inputs[OLE DB Command Input].ExternalColumns[Param_5]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="Param_5">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Parameter information.  Matches OLE DB's DBPARAMFLAGSENUM values."
+                          name="DBParamInfoFlags">65</property>
+                      </properties>
+                    </externalMetadataColumn>
+                    <externalMetadataColumn
+                      refId="Package\SincronizacionSCyCC\OLE DB Command.Inputs[OLE DB Command Input].ExternalColumns[Param_6]"
+                      dataType="numeric"
+                      name="Param_6"
+                      precision="10"
+                      scale="2">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Parameter information.  Matches OLE DB's DBPARAMFLAGSENUM values."
+                          name="DBParamInfoFlags">81</property>
+                      </properties>
+                    </externalMetadataColumn>
+                    <externalMetadataColumn
+                      refId="Package\SincronizacionSCyCC\OLE DB Command.Inputs[OLE DB Command Input].ExternalColumns[Param_7]"
+                      codePage="1252"
+                      dataType="str"
+                      length="20"
+                      name="Param_7">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Parameter information.  Matches OLE DB's DBPARAMFLAGSENUM values."
+                          name="DBParamInfoFlags">65</property>
+                      </properties>
+                    </externalMetadataColumn>
+                    <externalMetadataColumn
+                      refId="Package\SincronizacionSCyCC\OLE DB Command.Inputs[OLE DB Command Input].ExternalColumns[Param_8]"
+                      dataType="i4"
+                      name="Param_8">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Parameter information.  Matches OLE DB's DBPARAMFLAGSENUM values."
+                          name="DBParamInfoFlags">81</property>
+                      </properties>
+                    </externalMetadataColumn>
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\SincronizacionSCyCC\OLE DB Command.Outputs[OLE DB Command Output]"
+                  exclusionGroup="1"
+                  name="OLE DB Command Output"
+                  synchronousInputId="Package\SincronizacionSCyCC\OLE DB Command.Inputs[OLE DB Command Input]">
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\SincronizacionSCyCC\OLE DB Command.Outputs[OLE DB Command Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="OLE DB Command Error Output"
+                  synchronousInputId="Package\SincronizacionSCyCC\OLE DB Command.Inputs[OLE DB Command Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\SincronizacionSCyCC\OLE DB Command.Outputs[OLE DB Command Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\SincronizacionSCyCC\OLE DB Command.Outputs[OLE DB Command Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\SincronizacionSCyCC\OLE DB Command.Outputs[OLE DB Command Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\SincronizacionSCyCC\OLE DB Command.Outputs[OLE DB Command Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\SincronizacionSCyCC\OLE DB Command 1"
+              componentClassID="Microsoft.OLEDBCommand"
+              contactInfo="OLE DB Command;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;2"
+              description="Runs an SQL statement for each row in a data flow. For example, call a 'new employee setup' stored procedure for each row in the 'new employees' table. Note: running an SQL statement for each row of a large data flow may take a long time."
+              name="OLE DB Command 1"
+              usesDispositions="true"
+              version="2">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  expressionType="Notify"
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">UPDATE [dbo].[SistemaGestionClientes] SET [Telefono] = ? WHERE [IDCliente] = ?</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\SincronizacionSCyCC\OLE DB Command 1.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[DESKTOP-8L5TLOD.GestionClientes]"
+                  connectionManagerRefId="Package.ConnectionManagers[DESKTOP-8L5TLOD.GestionClientes]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\SincronizacionSCyCC\OLE DB Command 1.Inputs[OLE DB Command Input]"
+                  errorOrTruncationOperation="Command Execution"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="OLE DB Command Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\SincronizacionSCyCC\OLE DB Command 1.Inputs[OLE DB Command Input].Columns[IDCliente]"
+                      cachedDataType="i4"
+                      cachedName="IDCliente"
+                      cachedSortKeyPosition="1"
+                      externalMetadataColumnId="Package\SincronizacionSCyCC\OLE DB Command 1.Inputs[OLE DB Command Input].ExternalColumns[Param_1]"
+                      lineageId="Package\SincronizacionSCyCC\Sort.Outputs[Sort Output].Columns[IDCliente]" />
+                    <inputColumn
+                      refId="Package\SincronizacionSCyCC\OLE DB Command 1.Inputs[OLE DB Command Input].Columns[Telefono]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="20"
+                      cachedName="Telefono"
+                      cachedSortKeyPosition="5"
+                      externalMetadataColumnId="Package\SincronizacionSCyCC\OLE DB Command 1.Inputs[OLE DB Command Input].ExternalColumns[Param_0]"
+                      lineageId="Package\SincronizacionSCyCC\Sort.Outputs[Sort Output].Columns[Telefono]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\SincronizacionSCyCC\OLE DB Command 1.Inputs[OLE DB Command Input].ExternalColumns[Param_0]"
+                      codePage="1252"
+                      dataType="str"
+                      length="20"
+                      name="Param_0">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Parameter information.  Matches OLE DB's DBPARAMFLAGSENUM values."
+                          name="DBParamInfoFlags">65</property>
+                      </properties>
+                    </externalMetadataColumn>
+                    <externalMetadataColumn
+                      refId="Package\SincronizacionSCyCC\OLE DB Command 1.Inputs[OLE DB Command Input].ExternalColumns[Param_1]"
+                      dataType="i4"
+                      name="Param_1">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Parameter information.  Matches OLE DB's DBPARAMFLAGSENUM values."
+                          name="DBParamInfoFlags">81</property>
+                      </properties>
+                    </externalMetadataColumn>
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\SincronizacionSCyCC\OLE DB Command 1.Outputs[OLE DB Command Output]"
+                  exclusionGroup="1"
+                  name="OLE DB Command Output"
+                  synchronousInputId="Package\SincronizacionSCyCC\OLE DB Command 1.Inputs[OLE DB Command Input]">
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\SincronizacionSCyCC\OLE DB Command 1.Outputs[OLE DB Command Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="OLE DB Command Error Output"
+                  synchronousInputId="Package\SincronizacionSCyCC\OLE DB Command 1.Inputs[OLE DB Command Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\SincronizacionSCyCC\OLE DB Command 1.Outputs[OLE DB Command Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\SincronizacionSCyCC\OLE DB Command 1.Outputs[OLE DB Command Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\SincronizacionSCyCC\OLE DB Command 1.Outputs[OLE DB Command Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\SincronizacionSCyCC\OLE DB Command 1.Outputs[OLE DB Command Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\SincronizacionSCyCC\OLE DB Source"
+              componentClassID="Microsoft.OLEDBSource"
+              contactInfo="OLE DB Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;7"
+              description="OLE DB Source"
+              name="OLE DB Source"
+              usesDispositions="true"
+              version="7">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[dbo].[SistemaGestionClientes]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.String"
+                  description="The variable that contains the SQL command to be executed."
+                  name="SqlCommandVariable"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">0</property>
+                <property
+                  dataType="System.String"
+                  description="The mappings between the parameters in the SQL command and variables."
+                  name="ParameterMapping"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\SincronizacionSCyCC\OLE DB Source.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[DESKTOP-8L5TLOD.GestionClientes]"
+                  connectionManagerRefId="Package.ConnectionManagers[DESKTOP-8L5TLOD.GestionClientes]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\SincronizacionSCyCC\OLE DB Source.Outputs[OLE DB Source Output]"
+                  name="OLE DB Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\SincronizacionSCyCC\OLE DB Source.Outputs[OLE DB Source Output].Columns[IDCliente]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\SincronizacionSCyCC\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[IDCliente]"
+                      lineageId="Package\SincronizacionSCyCC\OLE DB Source.Outputs[OLE DB Source Output].Columns[IDCliente]"
+                      name="IDCliente"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\SincronizacionSCyCC\OLE DB Source.Outputs[OLE DB Source Output].Columns[Nombre]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\SincronizacionSCyCC\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Nombre]"
+                      length="100"
+                      lineageId="Package\SincronizacionSCyCC\OLE DB Source.Outputs[OLE DB Source Output].Columns[Nombre]"
+                      name="Nombre"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\SincronizacionSCyCC\OLE DB Source.Outputs[OLE DB Source Output].Columns[Apellido]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\SincronizacionSCyCC\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Apellido]"
+                      length="100"
+                      lineageId="Package\SincronizacionSCyCC\OLE DB Source.Outputs[OLE DB Source Output].Columns[Apellido]"
+                      name="Apellido"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\SincronizacionSCyCC\OLE DB Source.Outputs[OLE DB Source Output].Columns[Email]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\SincronizacionSCyCC\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Email]"
+                      length="100"
+                      lineageId="Package\SincronizacionSCyCC\OLE DB Source.Outputs[OLE DB Source Output].Columns[Email]"
+                      name="Email"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\SincronizacionSCyCC\OLE DB Source.Outputs[OLE DB Source Output].Columns[Telefono]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\SincronizacionSCyCC\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Telefono]"
+                      length="20"
+                      lineageId="Package\SincronizacionSCyCC\OLE DB Source.Outputs[OLE DB Source Output].Columns[Telefono]"
+                      name="Telefono"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\SincronizacionSCyCC\OLE DB Source.Outputs[OLE DB Source Output].Columns[Direccion]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\SincronizacionSCyCC\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Direccion]"
+                      length="255"
+                      lineageId="Package\SincronizacionSCyCC\OLE DB Source.Outputs[OLE DB Source Output].Columns[Direccion]"
+                      name="Direccion"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\SincronizacionSCyCC\OLE DB Source.Outputs[OLE DB Source Output].Columns[FechaRegistro]"
+                      dataType="dbDate"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\SincronizacionSCyCC\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[FechaRegistro]"
+                      lineageId="Package\SincronizacionSCyCC\OLE DB Source.Outputs[OLE DB Source Output].Columns[FechaRegistro]"
+                      name="FechaRegistro"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\SincronizacionSCyCC\OLE DB Source.Outputs[OLE DB Source Output].Columns[EstadoCliente]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\SincronizacionSCyCC\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[EstadoCliente]"
+                      length="50"
+                      lineageId="Package\SincronizacionSCyCC\OLE DB Source.Outputs[OLE DB Source Output].Columns[EstadoCliente]"
+                      name="EstadoCliente"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\SincronizacionSCyCC\OLE DB Source.Outputs[OLE DB Source Output].Columns[SaldoDeuda]"
+                      dataType="numeric"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\SincronizacionSCyCC\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[SaldoDeuda]"
+                      lineageId="Package\SincronizacionSCyCC\OLE DB Source.Outputs[OLE DB Source Output].Columns[SaldoDeuda]"
+                      name="SaldoDeuda"
+                      precision="10"
+                      scale="2"
+                      truncationRowDisposition="FailComponent" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\SincronizacionSCyCC\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[IDCliente]"
+                      dataType="i4"
+                      name="IDCliente" />
+                    <externalMetadataColumn
+                      refId="Package\SincronizacionSCyCC\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Nombre]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="Nombre" />
+                    <externalMetadataColumn
+                      refId="Package\SincronizacionSCyCC\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Apellido]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="Apellido" />
+                    <externalMetadataColumn
+                      refId="Package\SincronizacionSCyCC\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Email]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="Email" />
+                    <externalMetadataColumn
+                      refId="Package\SincronizacionSCyCC\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Telefono]"
+                      codePage="1252"
+                      dataType="str"
+                      length="20"
+                      name="Telefono" />
+                    <externalMetadataColumn
+                      refId="Package\SincronizacionSCyCC\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Direccion]"
+                      codePage="1252"
+                      dataType="str"
+                      length="255"
+                      name="Direccion" />
+                    <externalMetadataColumn
+                      refId="Package\SincronizacionSCyCC\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[FechaRegistro]"
+                      dataType="dbDate"
+                      name="FechaRegistro" />
+                    <externalMetadataColumn
+                      refId="Package\SincronizacionSCyCC\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[EstadoCliente]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="EstadoCliente" />
+                    <externalMetadataColumn
+                      refId="Package\SincronizacionSCyCC\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[SaldoDeuda]"
+                      dataType="numeric"
+                      name="SaldoDeuda"
+                      precision="10"
+                      scale="2" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\SincronizacionSCyCC\OLE DB Source.Outputs[OLE DB Source Error Output]"
+                  isErrorOut="true"
+                  name="OLE DB Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\SincronizacionSCyCC\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[IDCliente]"
+                      dataType="i4"
+                      lineageId="Package\SincronizacionSCyCC\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[IDCliente]"
+                      name="IDCliente" />
+                    <outputColumn
+                      refId="Package\SincronizacionSCyCC\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Nombre]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      lineageId="Package\SincronizacionSCyCC\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Nombre]"
+                      name="Nombre" />
+                    <outputColumn
+                      refId="Package\SincronizacionSCyCC\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Apellido]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      lineageId="Package\SincronizacionSCyCC\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Apellido]"
+                      name="Apellido" />
+                    <outputColumn
+                      refId="Package\SincronizacionSCyCC\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Email]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      lineageId="Package\SincronizacionSCyCC\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Email]"
+                      name="Email" />
+                    <outputColumn
+                      refId="Package\SincronizacionSCyCC\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Telefono]"
+                      codePage="1252"
+                      dataType="str"
+                      length="20"
+                      lineageId="Package\SincronizacionSCyCC\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Telefono]"
+                      name="Telefono" />
+                    <outputColumn
+                      refId="Package\SincronizacionSCyCC\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Direccion]"
+                      codePage="1252"
+                      dataType="str"
+                      length="255"
+                      lineageId="Package\SincronizacionSCyCC\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Direccion]"
+                      name="Direccion" />
+                    <outputColumn
+                      refId="Package\SincronizacionSCyCC\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[FechaRegistro]"
+                      dataType="dbDate"
+                      lineageId="Package\SincronizacionSCyCC\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[FechaRegistro]"
+                      name="FechaRegistro" />
+                    <outputColumn
+                      refId="Package\SincronizacionSCyCC\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[EstadoCliente]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\SincronizacionSCyCC\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[EstadoCliente]"
+                      name="EstadoCliente" />
+                    <outputColumn
+                      refId="Package\SincronizacionSCyCC\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[SaldoDeuda]"
+                      dataType="numeric"
+                      lineageId="Package\SincronizacionSCyCC\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[SaldoDeuda]"
+                      name="SaldoDeuda"
+                      precision="10"
+                      scale="2" />
+                    <outputColumn
+                      refId="Package\SincronizacionSCyCC\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\SincronizacionSCyCC\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\SincronizacionSCyCC\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\SincronizacionSCyCC\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\SincronizacionSCyCC\Slowly Changing Dimension"
+              componentClassID="Microsoft.SCD"
+              contactInfo="Slowly Changing Dimension;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;3"
+              description="Updates a SQL Server Analysis Services data warehouse dimension. Update dimension records that are already present and  insert dimension records that aren't. For example, update the DimProduct table of the AdventureWorksDW OLAP database with data from the Products table in the AdventureWorks OLTP database."
+              name="Slowly Changing Dimension"
+              version="3">
+              <properties>
+                <property
+                  dataType="System.String"
+                  description="Specifies the SELECT statement used to create a schema rowset."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">SELECT [IDCliente], [Telefono] FROM [dbo].[SistemaGestionClientes]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the WHERE clause in the SELECT statement that selects the current row among rows with identical business keys."
+                  name="CurrentRowWhere"></property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether historical attribute updates are directed to the transformation output for changing attribute updates."
+                  name="UpdateChangingAttributeHistory">true</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the transformation fails when columns with fixed attributes contain changes."
+                  name="FailOnFixedAttributeChange">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the column name for the inferred member."
+                  name="InferredMemberIndicator"></property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether inferred member updates are detected."
+                  name="EnableInferredMember">true</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the transformation fails when a lookup of an existing record fails."
+                  name="FailOnLookupFailure">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies that all rows in the input are new or the transformation detects the change type."
+                  name="IncomingRowChangeType"
+                  typeConverter="IncomingRowChangeType">1</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\SincronizacionSCyCC\Slowly Changing Dimension.Connections[LookupConnection]"
+                  connectionManagerID="Package.ConnectionManagers[DESKTOP-8L5TLOD.GestionClientes]"
+                  connectionManagerRefId="Package.ConnectionManagers[DESKTOP-8L5TLOD.GestionClientes]"
+                  description="Defines the connection to use for lookups in the dimension table"
+                  name="LookupConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\SincronizacionSCyCC\Slowly Changing Dimension.Inputs[Slowly Changing Dimension Input]"
+                  name="Slowly Changing Dimension Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\SincronizacionSCyCC\Slowly Changing Dimension.Inputs[Slowly Changing Dimension Input].Columns[IDCliente]"
+                      cachedDataType="i4"
+                      cachedName="IDCliente"
+                      cachedSortKeyPosition="1"
+                      externalMetadataColumnId="Package\SincronizacionSCyCC\Slowly Changing Dimension.Inputs[Slowly Changing Dimension Input].ExternalColumns[IDCliente]"
+                      lineageId="Package\SincronizacionSCyCC\Sort.Outputs[Sort Output].Columns[IDCliente]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          name="ColumnType"
+                          typeConverter="ColumnType">1</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\SincronizacionSCyCC\Slowly Changing Dimension.Inputs[Slowly Changing Dimension Input].Columns[Telefono]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="20"
+                      cachedName="Telefono"
+                      cachedSortKeyPosition="5"
+                      externalMetadataColumnId="Package\SincronizacionSCyCC\Slowly Changing Dimension.Inputs[Slowly Changing Dimension Input].ExternalColumns[Telefono]"
+                      lineageId="Package\SincronizacionSCyCC\Sort.Outputs[Sort Output].Columns[Telefono]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          name="ColumnType"
+                          typeConverter="ColumnType">2</property>
+                      </properties>
+                    </inputColumn>
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\SincronizacionSCyCC\Slowly Changing Dimension.Inputs[Slowly Changing Dimension Input].ExternalColumns[IDCliente]"
+                      dataType="i4"
+                      name="IDCliente" />
+                    <externalMetadataColumn
+                      refId="Package\SincronizacionSCyCC\Slowly Changing Dimension.Inputs[Slowly Changing Dimension Input].ExternalColumns[Telefono]"
+                      codePage="1252"
+                      dataType="str"
+                      length="20"
+                      name="Telefono" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\SincronizacionSCyCC\Slowly Changing Dimension.Outputs[Unchanged Output]"
+                  description="Unchanged rows"
+                  exclusionGroup="1"
+                  name="Unchanged Output"
+                  synchronousInputId="Package\SincronizacionSCyCC\Slowly Changing Dimension.Inputs[Slowly Changing Dimension Input]">
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\SincronizacionSCyCC\Slowly Changing Dimension.Outputs[New Output]"
+                  description="New rows"
+                  exclusionGroup="1"
+                  name="New Output"
+                  synchronousInputId="Package\SincronizacionSCyCC\Slowly Changing Dimension.Inputs[Slowly Changing Dimension Input]">
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\SincronizacionSCyCC\Slowly Changing Dimension.Outputs[Fixed Attribute Output]"
+                  description="Rows with changes in columns tagged FixedAttribute"
+                  exclusionGroup="1"
+                  name="Fixed Attribute Output"
+                  synchronousInputId="Package\SincronizacionSCyCC\Slowly Changing Dimension.Inputs[Slowly Changing Dimension Input]">
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\SincronizacionSCyCC\Slowly Changing Dimension.Outputs[Changing Attribute Updates Output]"
+                  description="These rows contain new information for ChangingAttribute (Type 1) column changes"
+                  exclusionGroup="1"
+                  name="Changing Attribute Updates Output"
+                  synchronousInputId="Package\SincronizacionSCyCC\Slowly Changing Dimension.Inputs[Slowly Changing Dimension Input]">
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\SincronizacionSCyCC\Slowly Changing Dimension.Outputs[Historical Attribute Inserts Output]"
+                  description="HistoricalAttribute (Type 2) changes result in these new rows"
+                  exclusionGroup="2"
+                  name="Historical Attribute Inserts Output"
+                  synchronousInputId="Package\SincronizacionSCyCC\Slowly Changing Dimension.Inputs[Slowly Changing Dimension Input]">
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\SincronizacionSCyCC\Slowly Changing Dimension.Outputs[Inferred Member Updates Output]"
+                  description="Information to update unpopulated initial dimension row"
+                  exclusionGroup="1"
+                  name="Inferred Member Updates Output"
+                  synchronousInputId="Package\SincronizacionSCyCC\Slowly Changing Dimension.Inputs[Slowly Changing Dimension Input]">
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\SincronizacionSCyCC\Sort"
+              componentClassID="Microsoft.Sort"
+              contactInfo="Sort;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Sorts input data in ascending or descending order when it cannot be sorted at its source. For example, sort sales data by 'customer id' before it is written to a flat file and delivered to another department. Note: We do not recommend this transformation for large data flows."
+              name="Sort"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the Sort transformation removes rows with duplicate sort values."
+                  name="EliminateDuplicates">true</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the maximum number of threads to use for sorting."
+                  expressionType="Notify"
+                  name="MaximumThreads">-1</property>
+              </properties>
+              <inputs>
+                <input
+                  refId="Package\SincronizacionSCyCC\Sort.Inputs[Sort Input]"
+                  name="Sort Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\SincronizacionSCyCC\Sort.Inputs[Sort Input].Columns[IDCliente]"
+                      cachedDataType="i4"
+                      cachedName="IDCliente"
+                      lineageId="Package\SincronizacionSCyCC\OLE DB Source.Outputs[OLE DB Source Output].Columns[IDCliente]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the comparison options for character data."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the sort order of the column."
+                          name="NewSortKeyPosition">1</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\SincronizacionSCyCC\Sort.Inputs[Sort Input].Columns[Nombre]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="100"
+                      cachedName="Nombre"
+                      lineageId="Package\SincronizacionSCyCC\OLE DB Source.Outputs[OLE DB Source Output].Columns[Nombre]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the comparison options for character data."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the sort order of the column."
+                          name="NewSortKeyPosition">2</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\SincronizacionSCyCC\Sort.Inputs[Sort Input].Columns[Apellido]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="100"
+                      cachedName="Apellido"
+                      lineageId="Package\SincronizacionSCyCC\OLE DB Source.Outputs[OLE DB Source Output].Columns[Apellido]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the comparison options for character data."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the sort order of the column."
+                          name="NewSortKeyPosition">3</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\SincronizacionSCyCC\Sort.Inputs[Sort Input].Columns[Email]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="100"
+                      cachedName="Email"
+                      lineageId="Package\SincronizacionSCyCC\OLE DB Source.Outputs[OLE DB Source Output].Columns[Email]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the comparison options for character data."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the sort order of the column."
+                          name="NewSortKeyPosition">4</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\SincronizacionSCyCC\Sort.Inputs[Sort Input].Columns[Telefono]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="20"
+                      cachedName="Telefono"
+                      lineageId="Package\SincronizacionSCyCC\OLE DB Source.Outputs[OLE DB Source Output].Columns[Telefono]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the comparison options for character data."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the sort order of the column."
+                          name="NewSortKeyPosition">5</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\SincronizacionSCyCC\Sort.Inputs[Sort Input].Columns[Direccion]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="255"
+                      cachedName="Direccion"
+                      lineageId="Package\SincronizacionSCyCC\OLE DB Source.Outputs[OLE DB Source Output].Columns[Direccion]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the comparison options for character data."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the sort order of the column."
+                          name="NewSortKeyPosition">6</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\SincronizacionSCyCC\Sort.Inputs[Sort Input].Columns[FechaRegistro]"
+                      cachedDataType="dbDate"
+                      cachedName="FechaRegistro"
+                      lineageId="Package\SincronizacionSCyCC\OLE DB Source.Outputs[OLE DB Source Output].Columns[FechaRegistro]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the comparison options for character data."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the sort order of the column."
+                          name="NewSortKeyPosition">7</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\SincronizacionSCyCC\Sort.Inputs[Sort Input].Columns[EstadoCliente]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="EstadoCliente"
+                      lineageId="Package\SincronizacionSCyCC\OLE DB Source.Outputs[OLE DB Source Output].Columns[EstadoCliente]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the comparison options for character data."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the sort order of the column."
+                          name="NewSortKeyPosition">8</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\SincronizacionSCyCC\Sort.Inputs[Sort Input].Columns[SaldoDeuda]"
+                      cachedDataType="numeric"
+                      cachedName="SaldoDeuda"
+                      cachedPrecision="10"
+                      cachedScale="2"
+                      lineageId="Package\SincronizacionSCyCC\OLE DB Source.Outputs[OLE DB Source Output].Columns[SaldoDeuda]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the comparison options for character data."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the sort order of the column."
+                          name="NewSortKeyPosition">9</property>
+                      </properties>
+                    </inputColumn>
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\SincronizacionSCyCC\Sort.Outputs[Sort Output]"
+                  isSorted="true"
+                  name="Sort Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\SincronizacionSCyCC\Sort.Outputs[Sort Output].Columns[IDCliente]"
+                      dataType="i4"
+                      lineageId="Package\SincronizacionSCyCC\Sort.Outputs[Sort Output].Columns[IDCliente]"
+                      name="IDCliente"
+                      sortKeyPosition="1">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the lineage identifier of the input column that is associated with this output column."
+                          name="SortColumnId">#{Package\SincronizacionSCyCC\OLE DB Source.Outputs[OLE DB Source Output].Columns[IDCliente]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\SincronizacionSCyCC\Sort.Outputs[Sort Output].Columns[Nombre]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      lineageId="Package\SincronizacionSCyCC\Sort.Outputs[Sort Output].Columns[Nombre]"
+                      name="Nombre"
+                      sortKeyPosition="2">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the lineage identifier of the input column that is associated with this output column."
+                          name="SortColumnId">#{Package\SincronizacionSCyCC\OLE DB Source.Outputs[OLE DB Source Output].Columns[Nombre]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\SincronizacionSCyCC\Sort.Outputs[Sort Output].Columns[Apellido]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      lineageId="Package\SincronizacionSCyCC\Sort.Outputs[Sort Output].Columns[Apellido]"
+                      name="Apellido"
+                      sortKeyPosition="3">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the lineage identifier of the input column that is associated with this output column."
+                          name="SortColumnId">#{Package\SincronizacionSCyCC\OLE DB Source.Outputs[OLE DB Source Output].Columns[Apellido]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\SincronizacionSCyCC\Sort.Outputs[Sort Output].Columns[Email]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      lineageId="Package\SincronizacionSCyCC\Sort.Outputs[Sort Output].Columns[Email]"
+                      name="Email"
+                      sortKeyPosition="4">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the lineage identifier of the input column that is associated with this output column."
+                          name="SortColumnId">#{Package\SincronizacionSCyCC\OLE DB Source.Outputs[OLE DB Source Output].Columns[Email]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\SincronizacionSCyCC\Sort.Outputs[Sort Output].Columns[Telefono]"
+                      codePage="1252"
+                      dataType="str"
+                      length="20"
+                      lineageId="Package\SincronizacionSCyCC\Sort.Outputs[Sort Output].Columns[Telefono]"
+                      name="Telefono"
+                      sortKeyPosition="5">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the lineage identifier of the input column that is associated with this output column."
+                          name="SortColumnId">#{Package\SincronizacionSCyCC\OLE DB Source.Outputs[OLE DB Source Output].Columns[Telefono]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\SincronizacionSCyCC\Sort.Outputs[Sort Output].Columns[Direccion]"
+                      codePage="1252"
+                      dataType="str"
+                      length="255"
+                      lineageId="Package\SincronizacionSCyCC\Sort.Outputs[Sort Output].Columns[Direccion]"
+                      name="Direccion"
+                      sortKeyPosition="6">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the lineage identifier of the input column that is associated with this output column."
+                          name="SortColumnId">#{Package\SincronizacionSCyCC\OLE DB Source.Outputs[OLE DB Source Output].Columns[Direccion]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\SincronizacionSCyCC\Sort.Outputs[Sort Output].Columns[FechaRegistro]"
+                      dataType="dbDate"
+                      lineageId="Package\SincronizacionSCyCC\Sort.Outputs[Sort Output].Columns[FechaRegistro]"
+                      name="FechaRegistro"
+                      sortKeyPosition="7">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the lineage identifier of the input column that is associated with this output column."
+                          name="SortColumnId">#{Package\SincronizacionSCyCC\OLE DB Source.Outputs[OLE DB Source Output].Columns[FechaRegistro]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\SincronizacionSCyCC\Sort.Outputs[Sort Output].Columns[EstadoCliente]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\SincronizacionSCyCC\Sort.Outputs[Sort Output].Columns[EstadoCliente]"
+                      name="EstadoCliente"
+                      sortKeyPosition="8">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the lineage identifier of the input column that is associated with this output column."
+                          name="SortColumnId">#{Package\SincronizacionSCyCC\OLE DB Source.Outputs[OLE DB Source Output].Columns[EstadoCliente]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\SincronizacionSCyCC\Sort.Outputs[Sort Output].Columns[SaldoDeuda]"
+                      dataType="numeric"
+                      lineageId="Package\SincronizacionSCyCC\Sort.Outputs[Sort Output].Columns[SaldoDeuda]"
+                      name="SaldoDeuda"
+                      precision="10"
+                      scale="2"
+                      sortKeyPosition="9">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the lineage identifier of the input column that is associated with this output column."
+                          name="SortColumnId">#{Package\SincronizacionSCyCC\OLE DB Source.Outputs[OLE DB Source Output].Columns[SaldoDeuda]}</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\SincronizacionSCyCC.Paths[Changing Attribute Updates Output]"
+              endId="Package\SincronizacionSCyCC\OLE DB Command 1.Inputs[OLE DB Command Input]"
+              name="Changing Attribute Updates Output"
+              startId="Package\SincronizacionSCyCC\Slowly Changing Dimension.Outputs[Changing Attribute Updates Output]" />
+            <path
+              refId="Package\SincronizacionSCyCC.Paths[Inferred Member Updates Output]"
+              endId="Package\SincronizacionSCyCC\OLE DB Command.Inputs[OLE DB Command Input]"
+              name="Inferred Member Updates Output"
+              startId="Package\SincronizacionSCyCC\Slowly Changing Dimension.Outputs[Inferred Member Updates Output]" />
+            <path
+              refId="Package\SincronizacionSCyCC.Paths[New Output]"
+              endId="Package\SincronizacionSCyCC\Insertar destino.Inputs[OLE DB Destination Input]"
+              name="New Output"
+              startId="Package\SincronizacionSCyCC\Slowly Changing Dimension.Outputs[New Output]" />
+            <path
+              refId="Package\SincronizacionSCyCC.Paths[OLE DB Source Output]"
+              endId="Package\SincronizacionSCyCC\Sort.Inputs[Sort Input]"
+              name="OLE DB Source Output"
+              startId="Package\SincronizacionSCyCC\OLE DB Source.Outputs[OLE DB Source Output]" />
+            <path
+              refId="Package\SincronizacionSCyCC.Paths[Sort Output]"
+              endId="Package\SincronizacionSCyCC\Slowly Changing Dimension.Inputs[Slowly Changing Dimension Input]"
+              name="Sort Output"
+              startId="Package\SincronizacionSCyCC\Sort.Outputs[Sort Output]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--Esta sección CDATA contiene la información de diseño del paquete. Esta sección incluye información como, por ejemplo, las coordenadas (x,y), el ancho y el alto.-->
+<!--Si edita manualmente esta sección y comete un error, puede eliminarlo. -->
+<!--El paquete podrá cargarse normalmente, pero se perderá la información de diseño anterior y el diseñador reorganizará los elementos automáticamente en la superficie de diseño.-->
+<Objects
+  Version="8">
+  <!--Cada uno de los nodos siguientes contiene propiedades que no afectan al comportamiento en tiempo de ejecución.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
+        <NodeLayout
+          Size="184,41.6"
+          Id="Package\CargarDatosContables"
+          TopLeft="317.499982652566,18.1999998734395" />
+        <NodeLayout
+          Size="180.8,41.6"
+          Id="Package\SincronizacionSCyCC"
+          TopLeft="319.16664922817,97.9333326523172" />
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+  <TaskHost
+    design-time-name="Package\CargarDatosContables">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="151.2,41.6"
+          Id="Package\CargarDatosContables\Flat File Source"
+          TopLeft="309.999983062347,26.8666664798392" />
+        <NodeLayout
+          Size="171.2,41.6"
+          Id="Package\CargarDatosContables\OLE DB Destination"
+          TopLeft="308.333316486743,203.666665250394" />
+        <EdgeLayout
+          Id="Package\CargarDatosContables.Paths[Flat File Source Output]"
+          TopLeft="385.599983062348,68.4666664798392">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="8.33333342439596,135.199998770555"
+              Start="0,0"
+              End="8.33333342439596,127.699998770555">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,63.5999993852774" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,63.5999993852774"
+                    Point2="0,67.5999993852774"
+                    Point3="4,67.5999993852774" />
+                  <mssgle:LineSegment
+                    End="4.33333342439596,67.5999993852774" />
+                  <mssgle:CubicBezierSegment
+                    Point1="4.33333342439596,67.5999993852774"
+                    Point2="8.33333342439596,67.5999993852774"
+                    Point3="8.33333342439596,71.5999993852774" />
+                  <mssgle:LineSegment
+                    End="8.33333342439596,127.699998770555" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\CargarDatosContables\OLE DB Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <TaskHost
+    design-time-name="Package\SincronizacionSCyCC">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        <NodeLayout
+          Size="152,41.6"
+          Id="Package\SincronizacionSCyCC\OLE DB Source"
+          TopLeft="223.7,5.49999999999995" />
+        <NodeLayout
+          Size="97.6,41.6"
+          Id="Package\SincronizacionSCyCC\Sort"
+          TopLeft="250.9,107.1" />
+        <EdgeLayout
+          Id="Package\SincronizacionSCyCC.Paths[OLE DB Source Output]"
+          TopLeft="299.7,47.1">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,59.9999999999999"
+              Start="0,0"
+              End="0,52.4999999999999">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,52.4999999999999" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="208,41.6"
+          Id="Package\SincronizacionSCyCC\Slowly Changing Dimension"
+          TopLeft="195.7,208.7" />
+        <EdgeLayout
+          Id="Package\SincronizacionSCyCC.Paths[Sort Output]"
+          TopLeft="299.7,148.7">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,60"
+              Start="0,0"
+              End="0,52.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="150.4,41.6"
+          Id="Package\SincronizacionSCyCC\Insertar destino"
+          TopLeft="5.50000000000004,310.3" />
+        <EdgeLayout
+          Id="Package\SincronizacionSCyCC.Paths[New Output]"
+          TopLeft="249.7,250.3">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-169,60"
+              Start="0,0"
+              End="-169,52.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,16.5063291139241" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,16.5063291139241"
+                    Point2="0,20.5063291139241"
+                    Point3="-4,20.5063291139241" />
+                  <mssgle:LineSegment
+                    End="-165,20.5063291139241" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-165,20.5063291139241"
+                    Point2="-169,20.5063291139241"
+                    Point3="-169,24.5063291139241" />
+                  <mssgle:LineSegment
+                    End="-169,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-111.59138671875,25.5063291139241,54.1827734375,11.43359375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="167.2,41.6"
+          Id="Package\SincronizacionSCyCC\OLE DB Command"
+          TopLeft="216.1,310.3" />
+        <EdgeLayout
+          Id="Package\SincronizacionSCyCC.Paths[Inferred Member Updates Output]"
+          TopLeft="299.7,250.3">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,60"
+              Start="0,0"
+              End="0,52.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-74.40298828125,20.4208984375,148.8059765625,11.658203125"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="176,41.6"
+          Id="Package\SincronizacionSCyCC\OLE DB Command 1"
+          TopLeft="443.7,310.3" />
+        <EdgeLayout
+          Id="Package\SincronizacionSCyCC.Paths[Changing Attribute Updates Output]"
+          TopLeft="349.7,250.3">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="182,59.9999999999999"
+              Start="0,0"
+              End="182,52.4999999999999">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,16.506329113924" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,16.506329113924"
+                    Point2="0,20.506329113924"
+                    Point3="4,20.506329113924" />
+                  <mssgle:LineSegment
+                    End="178,20.506329113924" />
+                  <mssgle:CubicBezierSegment
+                    Point1="178,20.506329113924"
+                    Point2="182,20.506329113924"
+                    Point3="182,24.506329113924" />
+                  <mssgle:LineSegment
+                    End="182,52.4999999999999" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="12.4660937499999,25.506329113924,157.0678125,11.6630859375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\SincronizacionSCyCC\OLE DB Source">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\SincronizacionSCyCC\Slowly Changing Dimension">
+    <Properties>
+      <Property>
+        <Name>SCDMetadata</Name>
+        <Value
+          type="q2:string">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SCDWizardMetadata xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"&gt;
+  &lt;ConnectionID&gt;{D6BDBC7C-3A76-4222-9708-229DEA7A1998}&lt;/ConnectionID&gt;
+  &lt;TableName&gt;[dbo].[SistemaGestionClientes]&lt;/TableName&gt;
+  &lt;InputToColumnsCollection&gt;
+    &lt;InputColumnToDBColumn&gt;
+      &lt;IdentificationString&gt;Sort.Outputs[Sort Output].Columns[Apellido]&lt;/IdentificationString&gt;
+      &lt;ColumnName&gt;Apellido&lt;/ColumnName&gt;
+      &lt;KeyType&gt;None&lt;/KeyType&gt;
+      &lt;ChangeType&gt;None&lt;/ChangeType&gt;
+    &lt;/InputColumnToDBColumn&gt;
+    &lt;InputColumnToDBColumn&gt;
+      &lt;IdentificationString&gt;Sort.Outputs[Sort Output].Columns[Direccion]&lt;/IdentificationString&gt;
+      &lt;ColumnName&gt;Direccion&lt;/ColumnName&gt;
+      &lt;KeyType&gt;None&lt;/KeyType&gt;
+      &lt;ChangeType&gt;None&lt;/ChangeType&gt;
+    &lt;/InputColumnToDBColumn&gt;
+    &lt;InputColumnToDBColumn&gt;
+      &lt;IdentificationString&gt;Sort.Outputs[Sort Output].Columns[Email]&lt;/IdentificationString&gt;
+      &lt;ColumnName&gt;Email&lt;/ColumnName&gt;
+      &lt;KeyType&gt;None&lt;/KeyType&gt;
+      &lt;ChangeType&gt;None&lt;/ChangeType&gt;
+    &lt;/InputColumnToDBColumn&gt;
+    &lt;InputColumnToDBColumn&gt;
+      &lt;IdentificationString&gt;Sort.Outputs[Sort Output].Columns[EstadoCliente]&lt;/IdentificationString&gt;
+      &lt;ColumnName&gt;EstadoCliente&lt;/ColumnName&gt;
+      &lt;KeyType&gt;None&lt;/KeyType&gt;
+      &lt;ChangeType&gt;None&lt;/ChangeType&gt;
+    &lt;/InputColumnToDBColumn&gt;
+    &lt;InputColumnToDBColumn&gt;
+      &lt;IdentificationString&gt;Sort.Outputs[Sort Output].Columns[FechaRegistro]&lt;/IdentificationString&gt;
+      &lt;ColumnName&gt;FechaRegistro&lt;/ColumnName&gt;
+      &lt;KeyType&gt;None&lt;/KeyType&gt;
+      &lt;ChangeType&gt;None&lt;/ChangeType&gt;
+    &lt;/InputColumnToDBColumn&gt;
+    &lt;InputColumnToDBColumn&gt;
+      &lt;IdentificationString&gt;Sort.Outputs[Sort Output].Columns[IDCliente]&lt;/IdentificationString&gt;
+      &lt;ColumnName&gt;IDCliente&lt;/ColumnName&gt;
+      &lt;KeyType&gt;BusinessKey&lt;/KeyType&gt;
+      &lt;ChangeType&gt;None&lt;/ChangeType&gt;
+    &lt;/InputColumnToDBColumn&gt;
+    &lt;InputColumnToDBColumn&gt;
+      &lt;IdentificationString&gt;Sort.Outputs[Sort Output].Columns[Nombre]&lt;/IdentificationString&gt;
+      &lt;ColumnName&gt;Nombre&lt;/ColumnName&gt;
+      &lt;KeyType&gt;None&lt;/KeyType&gt;
+      &lt;ChangeType&gt;None&lt;/ChangeType&gt;
+    &lt;/InputColumnToDBColumn&gt;
+    &lt;InputColumnToDBColumn&gt;
+      &lt;IdentificationString&gt;Sort.Outputs[Sort Output].Columns[SaldoDeuda]&lt;/IdentificationString&gt;
+      &lt;ColumnName&gt;SaldoDeuda&lt;/ColumnName&gt;
+      &lt;KeyType&gt;None&lt;/KeyType&gt;
+      &lt;ChangeType&gt;None&lt;/ChangeType&gt;
+    &lt;/InputColumnToDBColumn&gt;
+    &lt;InputColumnToDBColumn&gt;
+      &lt;IdentificationString&gt;Sort.Outputs[Sort Output].Columns[Telefono]&lt;/IdentificationString&gt;
+      &lt;ColumnName&gt;Telefono&lt;/ColumnName&gt;
+      &lt;KeyType&gt;None&lt;/KeyType&gt;
+      &lt;ChangeType&gt;ChangingAttribute&lt;/ChangeType&gt;
+    &lt;/InputColumnToDBColumn&gt;
+  &lt;/InputToColumnsCollection&gt;
+  &lt;GeneratedComponentsIdentificationStrings&gt;
+    &lt;anyType xsi:type="xsd:string"&gt;Insertar destino&lt;/anyType&gt;
+    &lt;anyType xsi:type="xsd:string"&gt;OLE DB Command&lt;/anyType&gt;
+    &lt;anyType xsi:type="xsd:string"&gt;OLE DB Command 1&lt;/anyType&gt;
+  &lt;/GeneratedComponentsIdentificationStrings&gt;
+  &lt;FailFixedAttribute&gt;false&lt;/FailFixedAttribute&gt;
+  &lt;FailChangeAttribute&gt;true&lt;/FailChangeAttribute&gt;
+  &lt;UseStartEndDate&gt;false&lt;/UseStartEndDate&gt;
+  &lt;CurrentIndicatorColumn /&gt;
+  &lt;InferredIndicatorColumn /&gt;
+  &lt;ValueCurrent /&gt;
+  &lt;ValueExpired /&gt;
+  &lt;StartDateColumn /&gt;
+  &lt;EndDateColumn /&gt;
+  &lt;DateVariable /&gt;
+  &lt;EnableInferredSupport&gt;true&lt;/EnableInferredSupport&gt;
+&lt;/SCDWizardMetadata&gt;</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\SincronizacionSCyCC\Insertar destino">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>
